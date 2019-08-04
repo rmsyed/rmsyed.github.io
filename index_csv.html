@@ -10,8 +10,8 @@
 margin:0;
 padding:0;
 border:0;
-font-family:Arial;
-font-size: 18px;
+font-family:Trebuchet MS;
+font-size: 16px;
 line-height:1.25;
 }
 
@@ -40,11 +40,17 @@ box-shadow: 0px 0px 10px #aaaaaa;
 }
 
 a.mainlinks {
-padding:5px;
+padding:5px 0px;
 margin:0px;
 font-size:18px;
 }
 
+
+a.sublink {
+padding:0px;
+margin:0px;
+font-size:16px;
+}
 
 a:link {color:#0099CC;text-decoration:none;}
 a:visited {color:#0099CC;text-decoration:none;}
@@ -73,7 +79,7 @@ list-style-image:url("bullet.png");
 
 
 .lister, .lister * {
-font-size:18px;
+/*font-size:16px;*/
 color:#333333;
 }
 
@@ -84,6 +90,7 @@ margin-bottom:1em;
 
 .lister li {
 padding:0;
+padding-bottom: 10px;
 margin:0;
 display:inline-block;
 }
@@ -98,9 +105,17 @@ align:left;
 .lister2 li {
 margin-bottom:10px;
 }
+span.subsub {
+	color:#555555;
+	font-size:14px;
+	display: inline-block;
+	font-weight: normal;
+}
 span.sub {
-color:#555555;
+color:#CC0000;
 font-size:16px;
+padding-bottom:15px;
+display:inline-block;
 }
 div.year {
 white-space:nowrap;
@@ -126,6 +141,7 @@ height:30px;
 padding:0px;
 margin:0;
 vertical-align:middle;
+display:none;
 }
 
 img.bullet {
@@ -165,15 +181,8 @@ width:100%;
 <div class="tr">
 <div class="td" style="width:9%;">&nbsp;</div>
 
-<!-- Removal for PDF -->
-<!--<div class="td" style="vertical-align:top;">
-<img src="rohail_avatar2.png" id="imgavatar"/>
-</div>
-<div class="td" style="width:90px;">&nbsp;</div>
--->
-<!-- END Removal -->
 
-<div class="td" style="text-align:left;font-size:18px;">I am currently a <a href="https://www.si.umich.edu/people/rohail-syed">PhD candidate</a> studying Information science at the <a href="http://si.umich.edu">University of Michigan - Ann Arbor</a>. My area of interest is in Information Retrieval (IR), with a particular focus on education systems.
+<div class="td" style="text-align:left;font-size:18px;">I am currently a <a class="mainlinks" href="https://www.si.umich.edu/people/rohail-syed">PhD candidate</a> studying Information science at the <a href="http://si.umich.edu" class="mainlinks">University of Michigan - Ann Arbor</a>. My area of research is in Information Retrieval (IR) applied to education/learning.
 
 <div style="display:block;height:50px;">&nbsp;</div>
 <!--<div style="display:block;height:2px;background-color:#CCCCCC;">&nbsp;</div>
@@ -189,7 +198,7 @@ Phone: (734) - 474 - 5198
 <div style="display:block;height:20px;">&nbsp;</div>-->
 
 <!--
-VIEW CV &nbsp;&nbsp;|&nbsp;&nbsp;<a class="mainlinks" href="CV-RohailSyed_2017.pdf" download style="padding:0px;">DOWNLOAD CV</a>
+VIEW CV &nbsp;&nbsp;|&nbsp;&nbsp;<a class="mainlinks" href="CV-RohailSyed_2017.pdf"  download style="padding:0px;">DOWNLOAD CV</a>
 <div style="display:block;height:20px;">&nbsp;</div>-->
 
 
@@ -232,17 +241,64 @@ A-Levels (Edexcel International, UK)</div>
 </ul>
 </div></div>
 
-<!-- workshops -->
-<div class="tr"><div class="td" style="font-size:16px;">WORKSHOPS & ONLINE COURSES</div></div>
+
+
+
+<!-- work experience -->
+<div class="tr rowhead"><div class="td"><span>WORK EXPERIENCE & ASSISTANTSHIP &nbsp;&nbsp;<img src="casesymb.png" style="height:32px;vertical-align:middle;" /></span></div></div>
 <div class="tr"><div class="td" style="vertical-align:top;width:100%;">
 <ul class="lister" style="width:100%;">
 
 
-<!--<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;padding-bottom:10px;">
+Research Intern at Microsoft Research</div>
+<div class="td year">June 2019 - Present</div></div></div>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;padding-bottom:10px;">
+Research Assistant at University of Michigan</div>
+<div class="td year">2014 - Present</div></div></div>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Presented Poster "Toward Search Engines Optimized for Human Learning" at MIDAS Symposium</div>
-<div class="td year">2017</div></div></div>
-</li></div></div></div>-->
+Internship - Android-based Math Tutoring App (iTeach, uLearn)</div>
+<div class="td year">2013</div></div></div>
+<span class="sub">National Foundation for Resource Development (NFRD)</span>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Internship - Android-based Personal Budgeting App</div>
+<div class="td year">2012</div></div></div>
+<span class="sub">National University of Science and Technology (NUST)</span>
+</li></div></div></div>
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Internship - Android-based Home Automation</div>
+<div class="td year">2012</div></div></div>
+<span class="sub">National Radio and Telecom Corporation (NRTC)</span>
+</li></div></div></div>
+
+
+
+</ul>
+</div></div>
+
+<!--<div class="tr"><div class="td" style="height:30px;"></div></div>-->
+<!-- workshops -->
+<!--<div class="tr"><div class="td" style="font-size:16px;">WORKSHOPS & ONLINE COURSES</div></div>
+<div class="tr"><div class="td" style="vertical-align:top;width:100%;">
+<ul class="lister" style="width:100%;">
+
+
 
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
@@ -262,7 +318,7 @@ Participated in IEEE Android Development Workshop</div>
 <div class="td year">2011</div></div></div>
 </li></div></div></div>
 
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
 Machine Learning Online Course - Stanford University</div>
 <div class="td year">2011</div></div></div>
@@ -274,101 +330,84 @@ Introduction to Databases Online Course - Stanford University<br /><br /></div>
 <div class="td year">2011</div></div></div>
 </li></div></div></div>
 
-
 </ul>
-</div></div>
+</div></div>-->
 
 
-
-<!-- work experience -->
-<div class="tr rowhead"><div class="td"><span>WORK EXPERIENCE & ASSISTANTSHIP &nbsp;&nbsp;<img src="casesymb.png" style="height:32px;vertical-align:middle;" /></span></div></div>
-<div class="tr"><div class="td" style="vertical-align:top;width:100%;">
-<ul class="lister" style="width:100%;">
-
-
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Teaching Assistant at University of Michigan</div>
-<div class="td year">Jan 2018 - Present</div></div></div>
-<span class="sub">SI 630 (Winter '18) - Natural Language Processing: Algorithms and People</span>
-</li></div></div></div>
-
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Teaching Assistant at University of Michigan</div>
-<div class="td year">Sept 2016 - Dec 2016</div></div></div>
-<span class="sub">SI 301 (Fall '16) - Models of Social Information Processing</span>
-</li></div></div></div>
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Research Assistant at University of Michigan</div>
-<div class="td year">2014 - Present</div></div></div>
-</li></div></div></div>
-
-<!--<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Teaching Assistant for course on Engineering Economics at NUST</div>
-<div class="td year">2012</div></div></div>
-</li></div></div></div>-->
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Teaching Assistant at NUST</div>
-<div class="td year">2012</div></div></div>
-<span class="sub">BS242 (Fall '12) - Engineering Economics</span>
-</li></div></div></div>
-
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Summer Internship at NUST - Android Development</div>
-<div class="td year">2012</div></div></div>
-</li></div></div></div>
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Paid Research Internship - Android-Based Home Automation</div>
-<div class="td year">2012</div></div></div>
-<span class="sub">Project sponsored by National Radio and Telecom Corporation (NRTC)</span>
-</li></div></div></div>
-
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Research Internship - iTeach, uLearn</div>
-<div class="td year">2013</div></div></div>
-<span class="sub">Project sponsored by National Foundation for Resource Development (NFRD)<br /><br /></span>
-</li></div></div></div>
-
-
-
-</ul>
-</div></div>
 
 
 
 <!-- research skills -->
-<div class="tr rowhead"><div class="td"><span>RESEARCH WORK</span></div></div>
+<div class="tr rowhead"><div class="td"><span>RESEARCH PAPERS<!--&nbsp;&nbsp;<img src="tempquill2.png" style="height:32px;vertical-align:bottom;" />--></span></div></div>
 <div class="tr"><div class="td" style="vertical-align:top;width:100%;">
 <ul class="lister" style="width:100%;">
 
 
 
+
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Invited Reviewer, PC Member and Registration Chair for ACM SIGIR 2018<br /><br /></div>
+Chhibber, N., <u>Syed, R.</u>, Teng, M., Goh, J., Collins-Thompson, K. & Law, E. (2018). Human Perception of Surprise: A User Study. <i>SIGIR 2018 CompS18 Workshop on Computational Surprise</i>. ACM.<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</div></div></div>
+</li></div></div></div>
+
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+<img class="trophy" src="trophy_icon.jpg" title="CHIIR 2018 Best Student Paper Award" /><u>Syed, R.</u> & Collins-Thompson, K. (2018). Exploring Document Retrieval Features Associated with Improved Short- and Long-term Vocabulary Learning Outcomes. In <i>Proceedings of the 2018 Conference on Human Information Interaction and Retrieval</i> (pp. 191-200). ACM. (<a href="chiir2018-syed.pdf">paper</a>) <span style="font-weight:bold;font-size:16px;">[Best Student Paper Award]</span><br /><br /></div>
 <div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</div></div></div>
 </li></div></div></div>
 
 
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-<img class="trophy" src="trophy_icon.jpg" title="CHIIR 2018 Best Student Paper Award" />Syed, R. & Collins-Thompson, K. (2018). Exploring Document Retrieval Features Associated with Improved Short- and Long-term Vocabulary Learning Outcomes. In <i>Proceedings of the 2018 Conference on Human Information Interaction and Retrieval</i> (pp. 191-200). ACM. (<a href="chiir2018-syed.pdf">paper</a>) <span style="font-weight:bold;font-size:16px;">[Best Student Paper Award]</span><br /><br /></div>
+<!--Syed, R. and Collins-Thompson, K. Optimizing Search Results for Human Learning Goals. <i>Information Retrieval Journal</i> (Special Issue on Searching as Learning), 2017.-->
+<!--Syed, R. & Collins-Thompson, K. (2017). Optimizing Search Results for Human Learning Goals. <i>Information Retrieval Journal</i>, 1-18.-->
+<u>Syed, R.</u> & Collins-Thompson, K. (2017). Optimizing search results for human learning goals. <i>Information Retrieval Journal, 20</i>(5), 506-523.
+<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</div></div></div>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+<u>Syed, R.</u> & Collins-Thompson, K. (2017). Retrieval models optimized for human learning. In <i>Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval</i> (pp. 555-564). ACM. (<a href="sigir-2017-camera(6).pdf">paper</a>)<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</div></div></div>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+<u>Syed, R.</u> & Collins-Thompson, K. (2016). Optimizing search results for educational goals: Incorporating keyword density as a retrieval objective. In <i>Second International Workshop on Search as Learning (SaL 2016)</i>. ACM. (<a href="SAL2016_paper_21.pdf">paper</a>)&nbsp; (<a href="Optimizing Web Search for Learning.pdf">slides</a>)<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016</div></div></div>
+</li></div></div></div>
+
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Collins-Thompson, K., Rieh, S. Y., Haynes, C. C., & <u>Syed, R.</u> (2016, March). Assessing Learning Outcomes in Web Search: A Comparison of Tasks and Query Strategies. In <i>Proceedings of the 2016 ACM on Conference on Human Information Interaction and Retrieval</i> (pp. 163-172). ACM. (<a href="chiir2016-collinsthompson-fp061_2.pdf">paper</a>)<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016</div></div></div>
+</li></div></div></div>
+
+<span style="font-weight:bold;">Talks / Poster Presentations</span><br /><br />
+
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Poster Presentation at MIDAS Annual Symposium (October 8, 2018) (<a href="poster_presentation_MIDAS_oct8.pdf">poster</a>) <b>[MIDAS Poster Award]</b><br /><br /></div>
 <div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</div></div></div>
 </li></div></div></div>
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Poster Presentation at MIDAS Learning Analytics Challenge Symposium (May 18, 2018) (<a href="poster_presentation_May_2018.pdf">poster</a>)<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</div></div></div>
+</li></div></div></div>
+
+
 
 
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
@@ -386,40 +425,158 @@ Presentation Talk at MIDAS Data Science Research Forum (December 1, 2017)<br /><
 
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Poster Presentation at Third Annual MIDAS Symposium (October 11, 2017)<br /><br /></div>
-<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</div></div></div>
-</li></div></div></div>
-
-<br /><br />
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-<!--Syed, R. and Collins-Thompson, K. Optimizing Search Results for Human Learning Goals. <i>Information Retrieval Journal</i> (Special Issue on Searching as Learning), 2017.-->
-<!--Syed, R. & Collins-Thompson, K. (2017). Optimizing Search Results for Human Learning Goals. <i>Information Retrieval Journal</i>, 1-18.-->
-Syed, R. & Collins-Thompson, K. (2017). Optimizing search results for human learning goals. <i>Information Retrieval Journal, 20</i>(5), 506-523.
-<br /><br /></div>
+Poster Presentation at Third Annual MIDAS Symposium (October 11, 2017) (<a href="poster_presentation_October_2017.pdf">poster</a>)<br /><br /></div>
 <div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</div></div></div>
 </li></div></div></div>
 
 
+
+
+
+</ul>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- workshops -->
+<div class="tr rowhead"><div class="td"><span>VOLUNTEER WORK<!--&nbsp;&nbsp;<img src="tempquill2.png" style="height:32px;vertical-align:bottom;" />--></span></div></div>
+<div class="tr"><div class="td" style="vertical-align:top;width:100%;">
+<ul class="lister" style="width:100%;">
+
+
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Syed, R. & Collins-Thompson, K. (2017). Retrieval models optimized for human learning. In <i>Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval</i> (pp. 555-564). ACM. (<a href="sigir-2017-camera(6).pdf">paper</a>)<br /><br /></div>
+<!-- Invited Reviewer and PC Member-->Developer and Maintainer of R package on CRAN<br />
+<span class="sub">Package: <span style="font-family: Courier New;font-weight:normal;"><a href="https://cran.r-project.org/web/packages/chartql/index.html">chartql</a></span></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</div></div></div>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+<!-- Invited Reviewer and PC Member-->Invited Reviewer for SIGIR 2018, WSDM 2019, LILE 2019<br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018 - 2019</div></div></div>
+</li></div></div></div>
+
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+<!--Invited Reviewer, PC Member and -->Registration Chair for ACM SIGIR 2018<br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</div></div></div>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Conducted IEEE Flash Workshop for Engineering Students at NUST</div>
+<div class="td year">2011</div></div></div>
+</li></div></div></div>
+
+</ul>
+</div></div>
+
+
+
+<!-- research talks/posters -->
+<!--<div class="tr rowhead"><div class="td"><span>RESEARCH POSTERS/TALKS</span></div></div>
+<div class="tr"><div class="td" style="vertical-align:top;width:100%;">
+<ul class="lister" style="width:100%;">
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+<img class="trophy" src="trophy_icon.jpg" title="MIDAS Poster Award" /> Poster Presentation at MIDAS Annual Symposium (October 8, 2018) (<a href="poster_presentation_MIDAS_oct8.pdf">poster</a>) <b>[MIDAS Poster Award]</b><br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</div></div></div>
+</li></div></div></div>
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Poster Presentation at MIDAS Learning Analytics Challenge Symposium (May 18, 2018) (<a href="poster_presentation_May_2018.pdf">poster</a>)<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018</div></div></div>
+</li></div></div></div>
+
+
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Invited Talk at Information Analysis and Retrieval (IAR) Seminar (December 8, 2017)<br /><br /></div>
 <div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</div></div></div>
 </li></div></div></div>
 
 
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Syed, R. & Collins-Thompson, K. (2016). Optimizing search results for educational goals: Incorporating keyword density as a retrieval objective. In <i>Second International Workshop on Search as Learning (SaL 2016)</i>. ACM. (<a href="SAL2016_paper_21.pdf">paper</a>)&nbsp; (<a href="Optimizing Web Search for Learning.pdf">slides</a>)<br /><br /></div>
-<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016</div></div></div>
+Presentation Talk at MIDAS Data Science Research Forum (December 1, 2017)<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</div></div></div>
+</li></div></div></div>
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Poster Presentation at Third Annual MIDAS Symposium (October 11, 2017) (<a href="poster_presentation_October_2017.pdf">poster</a>)<br /><br /></div>
+<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017</div></div></div>
 </li></div></div></div>
 
 
 
+</ul>
+</div></div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- teaching experience -->
+<div class="tr rowhead"><div class="td"><span>TEACHING EXPERIENCE</span></div></div>
+<div class="tr"><div class="td" style="vertical-align:top;width:100%;">
+<ul class="lister" style="width:100%;">
+
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Collins-Thompson, K., Rieh, S. Y., Haynes, C. C., & Syed, R. (2016, March). Assessing Learning Outcomes in Web Search: A Comparison of Tasks and Query Strategies. In <i>Proceedings of the 2016 ACM on Conference on Human Information Interaction and Retrieval</i> (pp. 163-172). ACM. (<a href="chiir2016-collinsthompson-fp061_2.pdf">paper</a>)<br /><br /></div>
-<div class="td year">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016</div></div></div>
+Teaching Assistant at University of Michigan</div>
+<div class="td year">Jan 2018 - April 2018</div></div></div>
+<span class="sub">SI 630 (Winter '18) - Natural Language Processing: Algorithms and People<br />
+<!--<span class="subsub">* Nominated for UMSI Outstanding Graduate Instructor of the Year Award</span>--></span>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Teaching Assistant at University of Michigan</div>
+<div class="td year">Sept 2016 - Dec 2016</div></div></div>
+<span class="sub">SI 301 (Fall '16) - Models of Social Information Processing</span>
+</li></div></div></div>
+
+
+<!--<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Teaching Assistant for course on Engineering Economics at NUST</div>
+<div class="td year">2012</div></div></div>
+</li></div></div></div>-->
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Teaching Assistant at NUST</div>
+<div class="td year">Sept 2012 - Dec 2012</div></div></div>
+<span class="sub">BS242 (Fall '12) - Engineering Economics</span>
 </li></div></div></div>
 
 </ul>
@@ -428,15 +585,19 @@ Collins-Thompson, K., Rieh, S. Y., Haynes, C. C., & Syed, R. (2016, March). Asse
 
 
 
+
+
+
+
 <!-- research skills -->
-<div class="tr rowhead"><div class="td"><span>RESEARCH/SEMESTER PROJECTS</span></div></div>
+<div class="tr rowhead"><div class="td"><span>RESEARCH PROJECTS</span></div></div>
 <div class="tr"><div class="td" style="vertical-align:top;width:100%;">
 <ul class="lister" style="width:100%;">
 
 
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Investigating Curiosity and Surprise in Text <i>(In Progress)</i></div>
+Investigating Gaze Behaviors during Learning <i>(In Progress)</i></div>
 <div class="td year">2018 - Present</div></div></div>
 </li></div></div></div>
 
@@ -452,16 +613,37 @@ Real-time Intrinsically Diverse Search engine</div>
 <div class="td year">2014 - 2015</div></div></div>
 </li></div></div></div>
 
+</ul>
+</div></div>
+
+
+<!-- other  skills -->
+<div class="tr rowhead"><div class="td"><span>COURSE / INDIVIDUAL PROJECTS</span></div></div>
+<div class="tr"><div class="td" style="vertical-align:top;width:100%;">
+<ul class="lister" style="width:100%;">
+
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
 Autonomous Landmine Detection & Mapping System</div>
 <div class="td year">2014</div></div></div>
 </li></div></div></div>
 
+
+
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
 Accelerometer-based Virtual Archery</div>
 <div class="td year">2013</div></div></div>
+</li></div></div></div>
+
+
+<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
+Game Development - <a href="https://github.com/rmsyed/GameDevelopment">Portfolio</a><br />
+<!--<br /><span class="sub">Swamp Master (Android) - <a href="files/SwampMaster.apk" class="sublink" download>Download</a>
+<br />SpikeBall (Android) - <a href="files/SpikeBall.apk" class="sublink" download>Download</a>-->
+</span></div>
+<div class="td year">2012</div></div></div>
 </li></div></div></div>
 
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
@@ -474,12 +656,6 @@ Android Home Automation System</div>
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
 Online Crime Reporting System</div>
 <div class="td year">2012</div></div></div>
-</li></div></div></div>
-
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
-<div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
-Fast Food Order and Delivery System<br /><br /></div>
-<div class="td year">2007</div></div></div>
 </li></div></div></div>
 
 
@@ -514,7 +690,6 @@ Web Development (Client-side)</div>
 <span class="sub">HTML5, CSS3, Javascript, JQuery, Flash</span>
 </li></div></div></div>
 
-
 <div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
 Web Development (Server-side)</div>
@@ -531,13 +706,13 @@ Mobile Development</div>
 </li></div></div></div>
 
 
-<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
+<!--<div class="table" style="width:100%;"><div class="tr"><div class="td" class="bullet_td" style="vertical-align:top;"><img class="bullet" src="bullet.png" /></div><div class="td mainconts" style="vertical-align:top;"><li style="width:100%;">
 <div class="table" style="width:100%;"><div class="tr"><div class="td" style="width:100%;">
 Hardware Development</div>
 </div></div>
 <span class="sub">Assembly Code, Embedded C, Raspberry Pi</span>
 <br /><br /><br />
-</li></div></div></div>
+</li></div></div></div>-->
 
 
 </ul>
@@ -568,13 +743,6 @@ Hardware Development</div>
 </div>
 
 
-<!-- Removal for PDF -->
-<!--<div class="table" style="width:100%;border:0px;">
-<div class="tr"><div class="td" style="background-color:#C3C3C3;height:50px;border:0;vertical-align:middle;">
-&nbsp;
-</div></div>
-</div>-->
-<!-- END Removal -->
 
 
 </div>
